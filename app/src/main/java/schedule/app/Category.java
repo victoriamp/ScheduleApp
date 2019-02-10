@@ -6,13 +6,15 @@ public class Category {
     private int time;
     private int priority;
     private String name;
+    private String colour;
     private ArrayList<Event> events = new ArrayList<>();
     private ArrayList<Event> splitEvents = new ArrayList<>();
 
-    public Category(int time, int priority, String name) {
+    public Category(int time, int priority, String name, String colour) {
         this.time = time;
         this.priority = priority;
         this.name = name;
+        this.colour = colour;
     }
 
     public void split() {
@@ -50,4 +52,8 @@ public class Category {
             }
         }
     }
+
+    public int getPriority() { return priority; }
+    public String getName() { return name; }
+    public ArrayList<Event> getSplitEvents() { return splitEvents; }
 }
