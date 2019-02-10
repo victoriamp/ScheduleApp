@@ -17,6 +17,15 @@ public class Event {
         this.split = split;
     }
 
+    public Event(String name, String category, int time, int start, int stop, boolean split) {
+        this.time = time;
+        this.start = start;
+        this.stop = stop;
+        this.name = name;
+        this.category = category;
+        this.split = split;
+    }
+
     public int getTime() { return time; }
     public int getStart() { return start; }
     public int getStop() { return stop; }
