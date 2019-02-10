@@ -6,8 +6,8 @@ public class Category {
     private int time;
     private int priority;
     private String name;
-    private ArrayList events = new ArrayList();
-    private ArrayList splitEvents = new ArrayList();
+    private ArrayList<Event> events = new ArrayList<>();
+    private ArrayList<Event> splitEvents = new ArrayList<>();
 
     public Category(int time, int priority, String name) {
         this.time = time;
@@ -16,10 +16,10 @@ public class Category {
     }
 
     public void split() {
-        splitEvents = new ArrayList();
+        splitEvents = new ArrayList<>();
 
         for (int i = events.size() - 1; i > -1; i--) {
-            Event e = (Event) events.get(i);
+            Event e = events.get(i);
             int n = 1, t;
 
             if (e.getSplit()) {
@@ -40,7 +40,7 @@ public class Category {
                 }
 
                 for (int j = splitEvents.size() - 1; j > -1; j--) {
-                    if (((Event) splitEvents.get(j)).getTime() <= t) {
+                    if (splitEvents.get(j).getTime() <= t) {
                         splitEvents.add(j, new Event(e.getName(), e.getCategory(), t, e.getSplit()));
                         break;
                     }
