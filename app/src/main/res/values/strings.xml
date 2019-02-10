@@ -3,4 +3,40 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="time_prompt_hours">How many hours would you like to allocate?</string>
+    <string-array name="time_array_hours">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="time_prompt_minutes">How many minutes would you like to allocate?</string>
+    <string-array name="time_array_minutes">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+    </string-array>
+
+    <string name="Category_prompt">What category does your task come under?</string>
+    <string-array name="Category_array">
+        <item>Study</item>
+        <item>Health</item>
+        <item>Leisure</item>
+        <item>Home</item>
+        <item>Other</item>
+    </string-array>
+
 </resources>
