@@ -8,6 +8,30 @@ import android.app.Activity;
 
 public class MainActivity extends Activity {
     CalendarView calendar;
+    Event[] monday = {(new Event("Sleep", "Health", 0, 510, true)),
+            (new Event("ODEs", "Class", 511, 690, true)),
+            (new Event("Comp 302", "Class", 870, 960, true)),
+            (new Event("Sleep", "Health", 1380, 1440, true))};
+    Event[] tuesday = {(new Event("Sleep", "Health", 0, 450, true)),
+            (new Event("O Chem", "Class", 451, 600, true)),
+            (new Event("Phys 232", "Class", 601, 690, true)),
+            (new Event("Sleep", "Health", 1380, 1440, true))};
+    Event[] wednesday = {(new Event("Sleep", "Health", 0, 510, true)),
+            (new Event("ODEs", "Class", 511, 690, true)),
+            (new Event("Comp 302", "Class", 870, 960, true)),
+            (new Event("Sleep", "Health", 1380, 1440, true))};
+    Event[] thursday = {(new Event("Sleep", "Health", 0, 450, true)),
+            (new Event("O Chem", "Class", 451, 600, true)),
+            (new Event("Phys 232", "Class", 601, 690, true)),
+            (new Event("Sleep", "Health", 1380, 1440, true))};
+    Event[] friday = {(new Event("Sleep", "Health", 0, 510, true)),
+            (new Event("ODEs", "Class", 511, 690, true)),
+            (new Event("Sleep", "Health", 1380, 1440, true))};
+    Event[] saturday = {(new Event("Sleep", "Health", 0, 570, true)),
+            (new Event("Robotics", "Meeting", 660, 1020, true)),
+            (new Event("Sleep", "Health", 1380, 1440, true))};
+    Event[] sunday = {(new Event("Sleep", "Health", 0, 570, true)),
+            (new Event("Sleep", "Health", 1380, 1440, true))};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

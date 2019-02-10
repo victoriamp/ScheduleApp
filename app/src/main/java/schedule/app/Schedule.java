@@ -82,7 +82,7 @@ public class Schedule {
                 Event e = c.getSplitEvents().get(event);
                 int start = sorted.get(index - 1).getStop() + 1;
                 sorted.add(index, new Event(e.getName(), c.getName(), e.getTime(), start, start + time, e.getSplit()));
-                        cats.get(cat).getSplitEvents().remove(event);
+                c.getSplitEvents().remove(event);
             }
 
             if (!added) {

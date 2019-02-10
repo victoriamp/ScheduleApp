@@ -7,6 +7,7 @@ public class Event {
     private String name;
     private String category;
     private boolean split;
+    private boolean permanent;
 
     public Event(String name, String category, int time, boolean split) {
         this.time = time;
@@ -15,6 +16,7 @@ public class Event {
         this.name = name;
         this.category = category;
         this.split = split;
+        permanent = false;
     }
 
     public Event(String name, String category, int time, int start, int stop, boolean split) {
@@ -24,6 +26,17 @@ public class Event {
         this.name = name;
         this.category = category;
         this.split = split;
+        permanent = false;
+    }
+
+    public Event(String name, String category, int start, int stop, boolean permanent) {
+        this.time = stop - start;
+        this.start = start;
+        this.stop = stop;
+        this.name = name;
+        this.category = category;
+        this.split = false;
+        this.permanent = permanent;
     }
 
     public int getTime() { return time; }
